@@ -771,7 +771,7 @@ async def my_info(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"┃ 📝 Siz orqali ro'yxatdan o'tganlar : {registered}\n"
             f"┃ 📞 Jami qo'ng'iroqlar : {total_calls}\n"
             f"┃ 💣 Jami spam : {total_spam}\n"
-            f"┃ 📅 Ro'yxatdan o'tgan sana : {u[0] if u else 'Noma'lum'}\n"
+            f"┃ 📅 Ro'yxatdan o'tgan sana : {u[0] if u else 'Nomalum'}\n"
             f"┃\n"
             f"┃ 📊 Bugungi urinishlar:\n"
             f"┃    • Qo'ng'iroq: {call_used}/{call_limit} (bepul: {call_free})\n"
