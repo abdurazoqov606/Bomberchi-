@@ -1,0 +1,13 @@
+# ========== Asosiy kutubxonalar ==========
+python-telegram-bot==20.7
+requests==2.31.0
+urllib3==2.1.0
+
+# ========== Ma'lumotlar bazasi ==========
+# SQLite3 - Python bilan birga keladi
+
+# ========== Qo'shimcha ==========
+# uuid, time, random, json, base64, hashlib, datetime, asyncio, threading, logging - Python standart kutubxonalari
+
+# ========== O'rnatish buyrug'i ==========
+# pip install -r requirements.txt
