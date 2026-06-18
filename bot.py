@@ -1337,7 +1337,7 @@ async def add_vip_admin_func(update: Update, context: ContextTypes.DEFAULT_TYPE)
             f"📝 Misol:\n"
             f"`/add_vip 123456789 7` -> 7 kunga VIP qiladi",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Orqaga", callback_data="admin_panel")]]),
-            parse_mode='Markdown'1
+            parse_mode='Markdown'
         )
     except Exception as e:
         logger.error(f"VIP qilish funksiyasida xatolik: {e}")
