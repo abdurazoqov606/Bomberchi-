@@ -1337,7 +1337,7 @@ async def add_vip_admin_func(update: Update, context: ContextTypes.DEFAULT_TYPE)
             f"📝 Misol:\n"
             f"`/add_vip 123456789 7` -> 7 kunga VIP qiladi",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Orqaga", callback_data="admin_panel")]]),
-            parse_mode='Markdown'
+            parse_mode='Markdown'1
         )
     except Exception as e:
         logger.error(f"VIP qilish funksiyasida xatolik: {e}")
@@ -1404,7 +1404,7 @@ async def owner_panel_func(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ========== Boshqaruv funksiyalari ==========
 async def toggle_call(update: Update, context: ContextTypes.DEFAULT_TYPE):
     BUTTONS_STATUS["call"] = not BUTTONS_STATUS["call"]
-    await update.callback_query.answer(f"{'Yoqildi' if BUTTONS_STATUS['call'] else 'O'chirildi'} qo'ng'iroq")
+    await update.callback_query.answer(f"""{"Yoqildi" if BUTTONS_STATUS['call'] else "O'chirildi"} qo'ng'iroq""")
     await owner_panel_func(update, context)
 
 async def toggle_asia(update: Update, context: ContextTypes.DEFAULT_TYPE):
